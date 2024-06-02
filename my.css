@@ -1,0 +1,8 @@
+.double-column {
+    float: left;
+    width: 45%;
+    padding: 10px
+}
+.required {
+    color: red
+}

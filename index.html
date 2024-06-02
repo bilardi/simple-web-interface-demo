@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Form HTML – Esempi di Tipi di Input e semplici azioni JS</title>    
+    <link rel="stylesheet" type="text/css" href="my.css">
+    <script type="text/javascript" src="my.js"></script>
+</head>
+<body class="home-template">
+<nav></nav>
+<main id="site-main" class="site-main">
+    <div class="theory double-column">
+        <form id="my-form" action="url-to-send-form-data" method="POST">
+            <fieldset><legend>Input types</legend>
+                <label for="input-text">Type text <sup class="required">*</sup></label>
+                <input type="text" id="input-text" placeholder="Enter name" required /><br />
+
+                <label for="input-password">Type password <sup class="required">*</sup></label>
+                <input type="password" id="input-password" placeholder="Enter your password" required /><br />
+
+                <label for="input-email">Type email</label>
+                <input type="email" id="input-email" placeholder="Enter your email" /><br />
+
+                <label for="input-url">Type url</label>
+                <input type="url" id="input-url" placeholder="Enter your website" /><br />
+
+                <label for="age">Type number</label>
+                <input type="number" id="age" placeholder="Enter your age" /><br />
+
+                <label for="input-tel">Type tel</label>
+                <input type="tel" id="input-tel" placeholder="Enter your telephone" /><br />
+
+                <fieldset>
+                    <legend>Date</legend>
+                    <label for="input-date">Type date</label>
+                    <input type="date" id="input-date" /><br />
+                    <label for="input-datetime">Type datetime-local</label>
+                    <input type="datetime-local" id="input-datetime" /><br />
+                    <label for="input-week">Type week</label>
+                    <input type="week" id="input-week" /><br />
+                    <label for="input-month">Type month</label>
+                    <input type="month" id="input-month" /><br />
+                </fieldset>
+                
+                <fieldset>
+                    <legend>name attribute mandatory</legend>
+                    <label for="input-search">Type search</label>
+                    <input type="search" id="input-search" name="input-search" placeholder="Enter your research" /><br />
+
+                    <fieldset>
+                        <legend>Only one choice</legend>
+                        <input type="radio" id="input-radio1" name="input-radio" />
+                        <label for="input-radio1">Type radio 1</label><br />            
+                        <input type="radio" id="input-radio2" name="input-radio" />
+                        <label for="input-radio2">Type radio 2</label><br />
+                        <input type="radio" id="input-radio3" name="input-radio" />
+                        <label for="input-radio3">Type radio 3</label><br />
+                    </fieldset>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Multi choice</legend>
+                        <input type="checkbox" id="input-checkbox1" />
+                        <label for="input-checkbox1">Type checkbox 1</label><br />
+                        <input type="checkbox" id="input-checkbox2" />
+                        <label for="input-checkbox2">Type checkbox 2</label><br />
+                        <input type="checkbox" id="input-checkbox3" />
+                        <label for="input-checkbox3">Type checkbox 3</label><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special</legend>
+                    <label for="input-file">Type file</label>
+                    <input type="file" id="input-file" /><br />
+
+                    <label for="input-color">Type color</label>
+                    <input type="color" id="input-color" placeholder="Enter name" /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Action by click</legend>
+                        <label for="input-reset">Type reset</label>
+                        <input type="reset" id="input-reset" value="Reset" /><br />
+
+                        <label for="input-submit">Type submit</label>
+                        <input type="submit" id="input-submit" value="Original Submit" /><br />
+
+                        <label for="input-button">Type button</label>
+                        <input type="button" id="input-button" value="Submit Button" /><br />
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend>Textarea</legend>
+                <textarea id="text-area" aria-label="Textarea" cols="50" rows="5">Enter your text</textarea>
+            </fieldset>
+        </form>
+    </div>
+    <div class="example double-column">
+        <h1>Test</h1>
+        <ul>
+            <li>Prova a scrivere qualcosa sugli input con <b>required</b> <sup class="required">*</sup> e cliccare su <b>Original Submit</b></li>
+            <li>Prova a scrivere qualcosa che non è una <b>email</b> e cliccare su <b>Original Submit</b></li>
+            <li>Prova a scrivere qualcosa che non è un <b>url</b> e cliccare su <b>Original Submit</b></li>
+            <li>Prova a cliccare su <b>Reset</b></li>
+            <li>Prova <b>Load files</b>, <b>Change color</b> e <b>Select correct answers</b></li>
+        </ul>
+        <form id="my-form" action="url-to-send-form-data" method="POST">
+            <fieldset><legend>Load files</legend>
+                <label for="json-file">JSON file</label>
+                <input type="file" id="json-file" /><br />
+                <fieldset><legend>JSON</legend>
+                    <textarea id="json-load" cols="50" rows="5"></textarea>
+                </fieldset>
+                <label for="xml-file">XML file</label>
+                <input type="file" id="xml-file" /><br />
+                <fieldset><legend>XML</legend>
+                    <textarea id="xml-load" cols="50" rows="5"></textarea>
+                </fieldset>
+            </fieldset>
+            <fieldset><legend>Change color</legend>
+                <label for="change-color">Choose the color</label>
+                <input type="color" id="change-color" />
+                <input type="button" aria-label="color-button" id="color-button" value="Change color" /><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Select correct answers</legend>
+                <label for="answer1">One selection</label>
+                <select id="answer1">
+                    <option value="">Select a notation format</option>
+                    <option value="HTML">HTML</option>
+                    <option value="XML">XML</option>
+                    <option value="JSON">JSON</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                </select><br /> 
+                <label for="answer2">Multi selection1</label>
+                <select id="answer2" multiple>
+                    <option value="">Select all markup languages</option>
+                    <option value="HTML">HTML</option>
+                    <option value="XML">XML</option>
+                    <option value="JSON">JSON</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                </select><br /> 
+                <label for="answer3">Multi selection2</label>
+                <select id="answer3" multiple>
+                    <option value="">Select all program languages</option>
+                    <option value="HTML">HTML</option>
+                    <option value="XML">XML</option>
+                    <option value="JSON">JSON</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                </select><br />
+                <input type="button" aria-label="answers-button" id="answers-button" value="Check answers" /><br />
+            </fieldset>
+        </form>
+    </div>
+</main>
+<footer></footer>
+<script type="text/javascript">
+    document.getElementById('json-file').addEventListener('change', onJSONChange);
+    document.getElementById('xml-file').addEventListener('change', onXMLChange);
+    document.getElementById('color-button').onclick = function() {
+        document.body.style.backgroundColor = document.getElementById('change-color').value;
+    }
+    document.getElementById('answers-button').onclick = function() {
+        rightAnswer1 = ["JSON"];
+        rightAnswer2 = ["HTML", "XML", "CSS"];
+        rightAnswer3 = ["JavaScript", "React"];
+        answerObj1 = document.getElementById('answer1');
+        answerObj2 = document.getElementById('answer2');
+        answerObj3 = document.getElementById('answer3');
+        checkAnswer(rightAnswer1, answerObj1);
+        checkAnswer(rightAnswer2, answerObj2);
+        checkAnswer(rightAnswer3, answerObj3);
+    }
+</script>
+</body></html>

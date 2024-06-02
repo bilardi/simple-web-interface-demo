@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<example attribute="something">
+    <element attr='something with "double quote"'>
+        <id>xml-load</id>
+    </element>
+    <element attr="&quot; hello world &quot;">
+        </id>
+    </element>
+</example>
