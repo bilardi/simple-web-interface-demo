@@ -2,19 +2,16 @@
 
 ## Form HTML
 
-Un [form](https://www.w3schools.com/html/html_forms.asp) HTML è un componente di una pagina web che permette l’interazione con l’utente. Per creare un form HTML si usa il tag <form> </form>.
+Un [form](https://www.w3schools.com/html/html_forms.asp) HTML è un componente di una pagina web che permette l’interazione con l’utente. Per creare un form HTML si usa il tag `<form> </form>`.
 
-Il form HTML permettono l’interazione con l’utente nei siti e nelle applicazioni web, quindi è importante renderli accessibili. Come
-minimo si richiede di soddisfare le seguenti indicazioni:
+Il form HTML permettono l’interazione con l’utente nei siti e nelle applicazioni web, quindi è importante renderli accessibili. Come minimo si richiede di soddisfare le seguenti indicazioni:
 
-1. per ogni elemento del form inserire un attributo `aria-label` di descrizione e usare l’elemento <label> per descrivere l’input richiesto
-2. nei form complessi o estesi usare gli elementi <fieldset> e
-<legend> per raggruppare e associare, rispettivamente, i
+1. per ogni elemento del form inserire un attributo `aria-label` di descrizione e usare l’elemento `<label>` per descrivere l’input richiesto
+2. nei form complessi o estesi usare gli elementi `<fieldset>` e
+`<legend>` per raggruppare e associare, rispettivamente, i
 relativi elementi del form.
 
-Per creare gli elementi interattivi dei form che accettano dati dall’utente si usa l’elemento <input> che non prevede un tag di
-chiusura. Questo elemento è uno dei più complessi in quanto sono possibili molte combinazioni come mostrato in tabella. Se
-l’attributo `type` non è specificato si usa il tipo di default `text`.
+Per creare gli elementi interattivi dei form che accettano dati dall’utente si usa l’elemento `<input>` che non prevede un tag di chiusura. Questo elemento è uno dei più complessi in quanto sono possibili molte combinazioni come mostrato in tabella. Se l’attributo `type` non è specificato si usa il tipo di default `text`.
 
 ### Special input types
 
@@ -34,19 +31,15 @@ Alcuni tipi di input però non sono supportati. Per esempio, sul browser Firefox
 
 Con JavaScript si può accedere e manipolare il [DOM](https://www.w3schools.com/js/js_htmldom.asp), il Document Object Model, la rappresentazione che il browser si crea della pagina web.
 
-Il DOM permette al codice JavaScript di accedere ai contenuti
-testuali e agli elementi della pagina trattandoli come oggetti
-JavaScript.
+Il DOM permette al codice JavaScript di accedere ai contenuti testuali e agli elementi della pagina trattandoli come oggetti JavaScript.
 
-Il DOM è uno standard del W3C che definisce un’interfaccia di
-programmazione (API) neutrale, indipendente dal linguaggio.
+Il DOM è uno standard del W3C che definisce un’interfaccia di programmazione (API) neutrale, indipendente dal linguaggio.
 
 ### Formato
 
 Ci sono vari tipi di nodi nel DOM:
-* elemento, per esempio <h1>, <p>, <ul>, ..
-* testo, per esempio <p>questo è un testo</p>, la frase questo
-è un testo rappresenta un nodo di tipo testo
+* elemento, per esempio `<h1>`, `<p>`, `<ul>`, ..
+* testo, per esempio `<p>questo è un testo</p>`, la frase **questo è un testo** rappresenta un nodo di tipo testo
 * documento, per esempio `<!doctype html>`
 * commento, per esempio `<!—- questo è un commento -->`
 * istruzione per il processore, per esempio `<?php echo $nome ?>`
@@ -105,14 +98,12 @@ Per i file che contengono stringhe di dati in formato JSON si usa l’estensione
 
 [XML](https://www.w3schools.com/xml/default.ASP) è l'acronimo di eXtensible Markup Language. XML è un linguaggio formale, indipendente da software e hardware, per la memorizzazione e il trasporto di dati.
 
-Si tratta di un linguaggio di marcatura, simile all'HTML, ma i cui tag possono essere definiti in base alle proprie esigenze. XML è
-stato infatti progettato per descrivere la natura dei dati che costituiscono le informazioni (semantica) e costituisce un formato per la trasmissione dei dati flessibile e facilmente leggibile
+Si tratta di un linguaggio di marcatura, simile all'HTML, ma i cui tag possono essere definiti in base alle proprie esigenze. XML è stato infatti progettato per descrivere la natura dei dati che costituiscono le informazioni (semantica) e costituisce un formato per la trasmissione dei dati flessibile e facilmente leggibile
 dall’uomo.
 
 ### Formato
 
-La sintassi di XML è formata essenzialmente da tag (o elementi) i quali possono avere attributi ed eventualmente al proprio interno altri
-tag.
+La sintassi di XML è formata essenzialmente da tag (o elementi) i quali possono avere attributi ed eventualmente al proprio interno altri tag.
 
 La presenza dei tag è necessaria per dividere il contenuto informativo del documento dalla sintassi utilizzata per rappresentarlo.
 
@@ -128,8 +119,7 @@ I tag possono avere degli [attributi](https://www.w3schools.com/xml/xml_attribut
 Regole generali per gli attributi:
 
 * I nomi degli attributi sono case-sensitive
-* Lo stesso tag non può contenere due attributi con lo stesso
-nome
+* Lo stesso tag non può contenere due attributi con lo stesso nome
 * Non sono ammessi attributi senza valore (solo nome)
 * Il valore degli attributi deve essere specificato tra apici (') o
 doppi apici (le virgolette ")
@@ -138,20 +128,20 @@ doppi apici (le virgolette ")
 
 Le entità predefinite sono:
 
-* &amp; che sta per &
-* &lt; che sta per <
-* &gt; che sta per >
-* &apos; che sta per '
-* &quot; che sta per "
+* `&amp;` che sta per &
+* `&lt;` che sta per <
+* `&gt;` che sta per >
+* `&apos;` che sta per '
+* `&quot;` che sta per "
 
 I [namespace](https://www.w3schools.com/xml/xml_namespaces.asp) sono dei prefissi necessari per evitare conflitti di nome quando si uniscono documenti XML da differenti origini.
 
 I conflitti di nome dei tag, con significato differente, possono essere evitati usando un prefisso seguito da due punti (:) e il nome del tag:
 
-* se entrambi i documenti XML da unire usano il tag <table> ma ha significato differente
+* se entrambi i documenti XML da unire usano il tag `<table>` ma ha significato differente
 * si può mettere un prefisso su ciascun tag, uno differente per documento:
-    * il primo, per esempio, con <p:table>
-    * il secondo, per esempio, con <s:table>
+    * il primo, per esempio, con `<p:table>`
+    * il secondo, per esempio, con `<s:table>`
 
 Per evitare di aggiungere il namespace (il prefisso) su ciascun tag, e relativi annidati, si può usare l'attributo `xmlns` che vuol dire appunto XML namespace.
 
@@ -175,6 +165,6 @@ Per i file che contengono stringhe di dati in formato XML si usa l’estensione 
 
 Questa tecnica permette di creare pagine dinamiche in modo asincrono e cioè
 
-* le informazioni dei tag HTML (come potrebbero essere dei <div>) possono essere caricati facendo una richiesta ad un web server
+* le informazioni dei tag HTML (come potrebbero essere dei `<div>`) possono essere caricati facendo una richiesta ad un web server
 * finché viene eseguita la richiesta, quel tag sarà vuoto (o avrà una gif di loading)
 * quando il server risponde, verranno caricate le informazioni
