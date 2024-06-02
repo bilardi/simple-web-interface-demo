@@ -18,6 +18,9 @@ Per creare gli elementi interattivi dei form che accettano dati dall’utente si
 * per i type `email` e `url`, c'è un controllo se il formato è corretto quando si clicca sull'input type di tipo `submit`
 * al type `search` è necessario aggiungere l'attributo `name` perché sennò non viene inviato nulla quando si clicca sull'input type di tipo `submit`
 * gli input con type `radio` che vogliamo collegare, devono avere lo stesso attributo `name`
+* al type `image` è necessario aggiungere l'attributo `src` con un url esistente di un'immagine perché sennò
+    * non verrà visualizzata l'immagine
+    * viene visualizzato il testo dell'attributo `alt`, che di default contiene **Submit Query**
 
 ### Incompatibilità
 
